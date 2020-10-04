@@ -1,0 +1,331 @@
+@import "colors";
+
+@import "fonts";
+
+
+body {
+    font-family: $secretMainFont;
+    color: $mainTextColor;
+    width: 100%;
+    height: 100%;
+    max-width: 1920px;
+    max-height: 1080px;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0em 0em;
+    border: 0em 0em;
+    font-size: 0.8em;
+    padding: 1em 2em;
+    position: absolute;
+    bottom: 0%;
+    background-color:$navFooterColor;
+  }
+  
+  .navbar {
+      color: $navFooterColor;
+    border-bottom: 1px solid #f1f1;
+    height: 4.5em;
+  }
+  
+  .navbar-nav {
+    font-size: 2vh;
+
+      .nav-link {
+        margin: 3vh;
+      }
+  }
+  
+  
+  
+  /* index */
+  
+  .main-images__1{
+    width: 100%;
+    height: 1%;
+    margin: 0%;
+    border: 0%;
+    padding: 0%;
+  }
+  
+  .main-images__2 {
+    display: none;
+  }
+  
+  .main-info__title {
+    font-family: $secretTitleFont;
+    color: $secretRed;
+    text-align: center;
+  }
+  
+  .main-info__text {
+    font-style: Book Oblique;
+    text-align: center;
+    font-size: 1.5em;
+  }
+  
+  .main-info__btn {
+    text-align: center;
+  }
+  
+  @media (min-width: 1040px) {
+    .navbar img {
+      position: absolute;
+      left: 5%;
+    }
+  
+    .navbar-nav {
+      position: absolute;
+      left: 50%;
+    }
+  }
+  
+  @media (min-width: 0px) and (max-width: 798px) {
+    .navbar-collapse {
+      z-index: 1;
+      color: black;
+      background-color: white;
+      width: 100%;
+    }
+  
+    .main-info__text {
+      font-size: 1.2em;
+      position: absolute;
+      top: 55%;
+    }
+  
+    .main-images__1{
+      display: none;
+    }
+  
+    .main-images__2{
+      display: block;
+      width: 100%;
+      position: absolute;
+      top: 25%;
+    }
+  
+    .main-info__btn {
+      z-index: 3;
+      position: absolute;
+      top: 78%;
+      left: 40%;
+    }
+  
+    footer {
+      font-size: 0.6em;
+    }
+  }
+  
+  @media (orientation: landscape) and (min-width: 0px) and (max-width: 798px) {
+    .main-info__title {
+      font-size: 1.5em;
+      position: absolute;
+      top: 67%;
+      left: 43%;
+    }
+  
+    .main-info__text {
+      font-size: 0.8em;
+      position: absolute;
+      top: 75%;
+      left: 13%;
+    }
+  
+    .main-images__2 {
+      display: none;
+    }
+  
+    .main-images__1 {
+      display: block;
+      width: 100%;
+    }
+  
+    .main-info__btn {
+      display: none;
+    }
+  
+    footer {
+      font-size: 0.6em;
+    }
+  }
+  
+  /* about treason */
+
+  #container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4vh 4vh;
+  }
+
+  .main-title {
+    font-family: $secretTitleFont;
+    color:$secretRed;
+    text-align: center;
+    font-size: 6.5vh;
+  }
+
+  
+  .main-left__title {
+    font-family: $secretMainFont;
+    color:$secretRed;
+    text-align: center;
+    font-size: 1.5em;
+   
+  }
+
+  .main-rigth__title {
+    font-family: $secretMainFont;
+    color:$secretRed;
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+  .main-left__text {
+    position: absolute;
+  }
+  
+  
+  .main-rigth, .main-left {
+    text-align: center;
+    width: 50%;
+  }
+  
+  .carousel-inner {
+    width: 500px;
+    height: 325px;
+    margin: 0% 0%;
+    padding: 0% 0%;
+  }
+  
+  .carousel-control-next {
+    position: absolute;
+    top: 1.5%;
+    left: 67%;
+  }
+
+  /* project */
+
+.pptitle { text-align: center;
+  font-family: $secretTitleFont;
+  color:$secretRed ;
+  font-size: 6.5vh;
+}
+
+.ppsubtitle {  text-align: center;
+  font-size: 2vh;
+  margin: 0vh;
+
+}
+
+.abusp h3 {
+  color:$projectSubtitleColor;
+}
+
+.abusp2 {
+  color:$projectSubtitleColor;
+}
+
+.pcontainer {
+  display: grid;
+  padding: 5vh 5vh;
+  grid-template-columns: 17% 25% 58%;
+  grid-template-rows: 20% 20% 20% 20%;
+  padding: 2vh 5vh;
+ 
+}
+
+.pimages {
+padding-left: 3vh;
+}
+
+
+
+
+
+
+/* episodes */
+
+.etitle {
+  text-align: center;
+  font-family: $secretTitleFont;
+  color: $secretRed ;
+  font-size: 6vh;
+}
+
+.esubtitle {
+  text-align: center;
+  font-style: light;
+  font-size: 3vh;
+  
+}
+
+.eptitles {
+  font-family: $secretTitleFont;
+  font-size: 4vh;
+}
+
+
+
+.division { position: absolute;
+  top: 37%;
+  display: grid;
+  margin: 2vh 2vh;
+  grid-template-columns: 33% 33% 33% ;
+  grid-template-rows: 33% 33% 33%;
+  font-size: 14px;  
+  text-align: center;     
+}
+
+
+
+/* contac */
+.ctitle {   text-align: center;
+  font-family: $secretTitleFont;
+  color: $secretRed ;
+  font-size: 6.5vh;
+
+}
+
+.csubtitle {
+  text-align: center;
+  font-style: bold;
+}
+
+
+
+.csubtitle2 {
+  text-align: center;
+  font-style: bold;
+}
+
+form {
+  justify-self: center;
+}
+
+.socialmedia { 
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+
+.iglogoc {   
+  width: 2vh;
+  height: 2vh;   
+}
+
+.fblogoc {
+  width: 2vh;
+  height: 2vh;
+}
+  
+
+
+
