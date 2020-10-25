@@ -1,22 +1,24 @@
 body {
   width: 100%;
-  background-color: #e2dedb;
-  font-family: "Hind", sans-serif; }
-
-.navbar {
-  height: 3em; }
-  .navbar .navbar-nav {
-    font-size: 1.7vh;
-    position: absolute;
-    left: 53%; }
-    .navbar .navbar-nav .nav-link {
-      margin: 3vh;
-      color: #F8F9FA; }
-    .navbar .navbar-nav .logo {
-      width: 150px; }
+  background-color: #e9e6e3;
+  font-family: "Lato", sans-serif; }
+  body .navbar {
+    width: 100%;
+    height: 4em;
+    position: fixed;
+    z-index: 1; }
+    body .navbar .navbar-nav {
+      font-size: 1.7vh;
+      position: absolute;
+      left: 47%; }
+      body .navbar .navbar-nav .nav-link {
+        margin: 3vh;
+        color: #F8F9FA; }
+      body .navbar .navbar-nav .logo {
+        width: 150px; }
 
 .bg-light {
-  background-color: #471010 !important; }
+  background-color: #751313 !important; }
 
 .main-img {
   width: 100%; }
@@ -53,7 +55,7 @@ body {
     text-align: center;
     text-transform: uppercase; }
   .animation .scrolly {
-    font-family: "Hind", sans-serif;
+    font-family: "Lato", sans-serif;
     font-size: 1.8vh;
     color: #F8F9FA;
     text-align: center;
@@ -70,93 +72,154 @@ body {
     left: 35%; }
 
 @media (max-width: 575.99px) {
-  .main-img {
-    width: 100%; } }
+  body {
+    width: 100%;
+    max-width: 575.99px; }
+  .navbar-nav {
+    width: 100%;
+    background-color: #751313; }
+  .navbar {
+    height: 3em;
+    width: 100%; }
+  .main-text {
+    width: 100%; }
+  .animation {
+    display: none; } }
+
+@media (min-width: 576px) and (max-width: 767.99px) {
+  body {
+    width: 100%;
+    max-width: 767.99px; }
+  .navbar {
+    height: 3em;
+    width: 100%; }
+  .navbar-nav {
+    width: 100%;
+    background-color: #751313; }
+  .main-text {
+    width: 100%; }
+  .animation {
+    display: none; } }
+
+@media (min-width: 768px) and (max-width: 991.99px) {
+  body {
+    width: 100%;
+    max-width: 991.99px; }
+  .navbar-nav {
+    width: 100%;
+    background-color: #751313; }
+  .navbar {
+    height: 3em;
+    width: 100%; }
+  .main-text {
+    width: 100%; }
+  .animation {
+    display: none; } }
 
 .about-title {
   text-align: center;
   font-family: Satisfy, cursive;
-  color: #471010;
-  font-size: 4em;
+  color: #751313;
+  font-size: 5em;
   padding-top: 0.5em;
   font-weight: 500;
   line-height: 1em;
-  margin: 0.3em 0 0.5em 0; }
+  margin: 0.4em 0 0.3em 0; }
 
 .about-text {
-  width: 70%;
-  font-family: "Hind", sans-serif;
+  font-family: "Lato", sans-serif;
   color: #1b1c1e;
-  font-size: 1.3em;
-  text-align: justify; }
+  font-size: 1.5em;
+  text-align: center; }
+
+#carouselExampleControls {
+  width: 100%; }
 
 .row {
   padding: 0%; }
 
-.up-Con {
+.about-Con {
   width: 100%;
-  background-color: #471010; }
-  .up-Con .up-Title {
-    font-size: 2.5em;
-    font-family: "Hind", sans-serif;
-    color: #F8F9FA;
-    text-align: center;
-    font-weight: 600;
-    letter-spacing: 0.225em;
-    line-height: 1em;
-    margin: 0;
-    padding-top: 1.2em;
-    text-transform: uppercase; }
-  .up-Con .up-Text {
-    width: 20em;
-    text-align: justify;
-    color: #F8F9FA;
-    font-size: 1.2em; }
-
-.about-Con2 {
-  width: 100%;
-  margin: 0;
-  padding: 0%;
-  border: 0%;
-  background-color: #381010; }
-  .about-Con2 .down-Con {
-    height: 100%; }
-    .about-Con2 .down-Con .down-Title {
+  background-color: #751313; }
+  .about-Con .up-Con1 {
+    display: flex;
+    align-content: center;
+    justify-content: center; }
+    .about-Con .up-Con1 .up-Title {
       font-size: 2.5em;
-      font-family: "Hind", sans-serif;
+      font-family: "Lato", sans-serif;
       color: #F8F9FA;
       text-align: center;
       font-weight: 600;
       letter-spacing: 0.225em;
       line-height: 1em;
-      margin: 0 0 1em 0;
+      margin-top: 2em;
       text-transform: uppercase; }
-    .about-Con2 .down-Con .down-text {
+  .about-Con .up-Con2 {
+    display: flex;
+    align-content: center;
+    justify-content: center; }
+    .about-Con .up-Con2 .up-Text {
       width: 20em;
       text-align: justify;
       color: #F8F9FA;
-      font-size: 1.2em; }
+      font-size: 1.4em; }
+  .about-Con .down-Con1 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 5em; }
+    .about-Con .down-Con1 .down-Title {
+      font-size: 2.5em;
+      font-family: "Lato", sans-serif;
+      color: #F8F9FA;
+      text-align: center;
+      font-weight: 600;
+      letter-spacing: 0.225em;
+      line-height: 1em;
+      text-transform: uppercase; }
+  .about-Con .down-Con2 {
+    display: flex;
+    align-content: center;
+    justify-content: center; }
+    .about-Con .down-Con2 .down-text {
+      width: 20em;
+      text-align: justify;
+      color: #F8F9FA;
+      font-size: 1.4em; }
+
+@media (max-width: 575.99px) {
+  .about-title {
+    font-size: 3em; }
+  .about-text {
+    font-size: 1em; }
+  .about-Con .up-Con1 .up-Title {
+    font-size: 1.7em; }
+  .about-Con .up-Con2 .up-Text {
+    font-size: 1em;
+    margin-bottom: 2em; }
+  .about-Con .down-Con1 .down-Title {
+    font-size: 1.7em; }
+  .about-Con .down-Con2 .down-text {
+    font-size: 1em;
+    margin-bottom: 2em; }
+  .trailerv {
+    height: 230px; } }
 
 .pptitle {
   text-align: center;
   font-family: Satisfy, cursive;
-  color: #471010;
+  color: #751313;
   font-size: 4em;
   padding-top: 0.7em;
   text-align: center;
   font-weight: 400;
   word-spacing: 0.155em;
   line-height: 1em;
-  margin: 0 0 0.5em 0; }
+  margin: 1em 0.3em 0; }
 
-.ppsubtitle {
-  text-align: center;
-  font-size: 1.3em;
-  margin-bottom: 1em; }
-
-.ppara p {
-  width: 25em;
-  font-size: 1.2em;
+.ppara {
+  font-size: 1.4em;
   text-align: justify;
   padding: 0%; }
 
@@ -164,37 +227,32 @@ body {
   width: 100%;
   margin-bottom: 3em; }
 
-.santi {
-  margin-left: 4em; }
+.santi-con1 .santi-con2 {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center; }
 
-.gerald {
-  margin-left: 4em; }
+.gerald-con1 .gerald-con2 {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center; }
 
-.p-Con .santi-name {
-  font-size: 1.7em; }
-
-.p-Con .santi-Info {
-  list-style: none; }
-
-.p-Con2 .gerald-name {
-  font-size: 1.7em; }
-
-.p-Con2 .gerald-Info {
-  list-style: none; }
-
-.ppara {
-  padding-left: 4em;
-  padding-top: 1em; }
+@media (max-width: 575.99px) {
+  .pptitle {
+    font-size: 3em; }
+  .ppara {
+    font-size: 1em; } }
 
 .ep-con {
   width: 100%;
-  background-color: #471010;
+  background-color: #751313;
   color: #F8F9FA; }
 
 .etitle {
   text-align: center;
   font-family: Satisfy, cursive;
-  color: #F8F9FA;
   font-size: 4em;
   padding-top: 0.7em;
   text-align: center;
@@ -205,31 +263,50 @@ body {
 
 .esubtitle {
   text-align: center;
-  font-style: light;
-  font-size: 3em; }
+  font-size: 1.6em;
+  font-weight: 200;
+  margin-bottom: 1em; }
 
 .eptitles {
   font-family: Satisfy, cursive;
   text-align: center;
-  font-size: 3em;
-  margin-top: 1.5em;
+  font-size: 2.7em;
+  margin-top: 0.8em;
   margin-bottom: 0.5em; }
 
 .epp {
+  font-size: 1.3em;
   text-align: justify;
-  margin-bottom: 5em; }
+  margin-bottom: 3em; }
+
+.e-imgs {
+  display: flex;
+  justify-content: center; }
+
+@media (max-width: 575.99px) {
+  .etitle {
+    font-size: 3em; }
+  .eptitles {
+    font-size: 1.9em; }
+  .epp {
+    font-size: 1em; }
+  .esubtitle {
+    font-size: 1.3em; } }
 
 .ctitle {
   text-align: center;
   font-family: Satisfy, cursive;
-  color: #471010;
+  color: #751313;
   font-size: 4em;
-  margin-top: 0.7em; }
+  margin: 0.7 0 0.7 0; }
 
 .csubtitle {
   text-align: center;
   font-style: bold;
   font-size: 1.3em; }
+
+.logos {
+  width: 0.5em; }
 
 .section-contact {
   width: 100%;
@@ -274,7 +351,7 @@ body {
 .section-contact .form-contact .submit-input input {
   margin-top: 20px;
   padding: 15px 50px;
-  background-color: #471010;
+  background-color: #751313;
   color: #fff;
   border: none;
   font-weight: 700;
@@ -311,7 +388,7 @@ body {
 
 #footer {
   padding: 4em 0 2em 0;
-  background-color: #471010;
+  background-color: #751313;
   text-align: center;
   border: 0%; }
   #footer .icons {

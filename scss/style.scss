@@ -3,20 +3,34 @@
 @import "fonts";
 
 
+
+
+
+
+
+
+
+
+
 body {
   width: 100%;
 
   background-color: $backgroundColor;
   font-family: $secretMainFont;
-}
+  
 
 .navbar {
-  height: 3em;
+  width: 100%;
+  height: 4em;
+  position: fixed;
+  z-index: 1;
+  
   .navbar-nav {
     font-size: 1.7vh;
     position: absolute;
-    left: 53%;
+    left: 47%;
     
+   
       .nav-link {
         margin: 3vh;
         color: $textColorWhite;
@@ -24,9 +38,11 @@ body {
 
       .logo {
         width: 150px;
+        
       }
   }
  
+}
 }
 
 .bg-light {
@@ -101,9 +117,389 @@ body {
 //medias query index
 
 @media (max-width: 575.99px) {
-    .main-img{
-      width: 100%;
+  body {
+    width: 100%;
+    max-width: 575.99px;  
+  }
+
+   .navbar-nav {
+    width: 100%;
+    background-color: $secretRed;
+  }
+
+  .navbar {
+    height: 3em;
+    width: 100%;
+  }
+  .main-text{
+    width: 100%;
+  }
+
+  .animation {
+     display: none;
+
     }
+  }
+  
+  @media (min-width: 576px) and (max-width: 767.99px) {
+    body {
+      width: 100%;
+      max-width: 767.99px;
+      
+    }
+    
+      .navbar {
+        height: 3em;
+        width: 100%;
+      }
+     
+      .navbar-nav {
+        width: 100%;
+        background-color: $secretRed;
+      }
+
+      .main-text{
+        width: 100%;
+      }
+    
+      .animation {
+         display: none;
+    
+        }
+  }
+ 
+  @media (min-width: 768px) and (max-width: 991.99px) {
+    body {
+      width: 100%;
+      max-width: 991.99px;
+      
+    }
+    
+    .navbar-nav {
+      width: 100%;
+      background-color: $secretRed;
+    }
+      .navbar {
+        height: 3em;
+        width: 100%; 
+       
+      }
+      .main-text{
+        width: 100%;
+      }
+    
+      .animation {
+         display: none;
+    
+        }
+  }
+  
+
+
+
+
+
+
+
+// About treason 
+
+
+ 
+.about-title {
+  text-align: center;
+  font-family: $secretTitleFont;
+  color:$secretRed ;
+  font-size:5em ;
+  padding-top: 0.5em;
+  font-weight: 500;
+  line-height: 1em;
+  margin: 0.4em 0 0.3em 0;
+  
+}
+
+.about-text{
+  
+  font-family: $secretMainFont;
+    color: $mainTextColor;
+    font-size: 1.5em;
+    text-align: center;   
+}
+
+
+
+#carouselExampleControls {
+ width:100%;
+}
+
+
+.row {
+  padding:0%;
+}
+
+.about-Con {
+width: 100%;   
+background-color: $secretRed;
+
+
+.up-Con1 {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+.up-Title{
+  font-size: 2.5em;
+  font-family: $secretMainFont;
+  color: $textColorWhite;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.225em;
+  line-height: 1em;
+  margin-top: 2em;
+  text-transform: uppercase;
+  }
+  }
+
+  .up-Con2 {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+  .up-Text {
+  width: 20em;
+  text-align: justify;
+  color: $textColorWhite;
+  font-size: 1.4em;
+  }
+  }
+
+.down-Con1 {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: 5em;
+
+  .down-Title{
+    font-size: 2.5em;
+    font-family: $secretMainFont;
+    color: $textColorWhite;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 0.225em;
+    line-height: 1em;
+    text-transform: uppercase;
+  }
+}
+
+.down-Con2 {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+  .down-text {
+    width: 20em;
+    text-align: justify;
+    color: $textColorWhite;
+    font-size: 1.4em;
+  }
+}
+
+}
+
+
+
+//media querys about treason
+
+@media (max-width: 575.99px) {
+  .about-title {
+    font-size: 3em;
+  }
+
+  .about-text {
+    font-size: 1em;
+    
+  }
+ .about-Con {
+   .up-Con1 {
+    .up-Title{
+      font-size: 1.7em;
+    }
+   }
+   .up-Con2 {
+    .up-Text  {
+      font-size: 1em;
+      margin-bottom: 2em;
+    }
+   }
+   .down-Con1 {
+    .down-Title{
+      font-size: 1.7em;  
+    }
+   }
+   .down-Con2 {
+    .down-text  { 
+      font-size: 1em;
+      margin-bottom: 2em;
+    }
+   }
+ }
+  
+  
+  .trailerv {
+    height: 230px;
+  }
+
+  }
+  
+  @media (min-width: 576px) and (max-width: 767.99px) {
+ 
+  }
+  
+  @media (min-width: 768px) and (max-width: 991.99px) {
+ 
+  }
+
+
+
+// project 
+
+
+.pptitle {
+   text-align: center;
+  font-family: $secretTitleFont;
+  color:$secretRed ;
+  font-size:4em ;
+  padding-top: 0.7em;
+  text-align: center;
+  font-weight: 400;
+  word-spacing: 0.155em;
+  line-height: 1em;
+  margin:  1em 0.3em 0;
+  
+}
+
+
+.ppara {  
+  font-size: 1.4em;
+  text-align: justify;
+  padding: 0%;
+
+}
+
+.pimg {
+  width: 100%;
+  margin-bottom: 3em;
+}
+
+
+
+.santi-con1 .santi-con2 {
+ display: flex;
+ width: 100%;
+ align-items: center;
+ justify-content: center;
+}
+.gerald-con1 .gerald-con2 {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+ }
+
+
+
+
+//media querys de project
+
+
+
+@media (max-width: 575.99px) {
+
+  .pptitle {
+   font-size: 3em;
+  }
+
+
+  .ppara {
+    font-size: 1em;
+  }
+}
+  
+  
+  @media (min-width: 576px) and (max-width: 767.99px) {
+
+ 
+  }
+  
+  @media (min-width: 768px) and (max-width: 991.99px) {
+ 
+  }
+
+
+
+
+//episodes
+
+.ep-con {
+width: 100%;
+background-color: $secretRed;
+color: $textColorWhite;
+}
+
+.etitle {
+  text-align: center;
+  font-family: $secretTitleFont;
+  font-size:4em ;
+  padding-top: 0.7em;
+  text-align: center;
+  font-weight: 100;
+  word-spacing: 0.100em;
+  line-height: 1em;
+  margin: 0 0 0.5em 0;
+}
+
+.esubtitle {  
+  text-align: center;
+  font-size: 1.6em;
+  font-weight: 200;
+  margin-bottom: 1em;
+
+}
+
+.eptitles {
+  font-family: $secretTitleFont;
+  text-align: center;
+  font-size: 2.7em;
+  margin-top: 0.8em;
+  margin-bottom: 0.5em;
+}
+
+.epp {
+  font-size: 1.3em;
+  text-align: justify;
+  margin-bottom: 3em;
+}
+
+.e-imgs {
+  display: flex;
+  justify-content: center;
+}
+//media querys de episodes
+
+
+@media (max-width: 575.99px) {
+  .etitle {
+    font-size: 3em;
+   }
+   .eptitles {
+    font-size: 1.9em;
+   }
+  .epp {
+    font-size: 1em;
+  }
+
+  .esubtitle {
+    font-size: 1.3em;
+  }
   }
   
   @media (min-width: 576px) and (max-width: 767.99px) {
@@ -120,227 +516,13 @@ body {
 
 
 
-// About treason 
-
-
- 
-.about-title {
-  text-align: center;
-  font-family: $secretTitleFont;
-  color:$secretRed ;
-  font-size:4em ;
-  padding-top: 0.5em;
-  font-weight: 500;
-  line-height: 1em;
-  margin: 0.3em 0 0.5em 0;
-  
-}
-
-.about-text{
-  width: 70%;
-  font-family: $secretMainFont;
-    color: $mainTextColor;
-    font-size: 1.3em;
-    text-align: justify ;
-   
-}
-
-
-
-#carouselExampleControls {
-
-}
-.row {
-  padding:0%;
-}
-
-.up-Con {
-width: 100%;   
-background-color: $secretRed;
-
-.up-Title{
-  font-size: 2.5em;
-  font-family: $secretMainFont;
-  color: $textColorWhite;
-  text-align: center;
-  font-weight: 600;
-  letter-spacing: 0.225em;
-  line-height: 1em;
-  margin: 0;
-  padding-top: 1.2em;
-  text-transform: uppercase;
-}
-
-.up-Text {
-  
-  width: 20em;
-  text-align: justify;
-  color: $textColorWhite;
-  font-size: 1.2em;
- 
-}
-}
-
-.about-Con2 {
-  width: 100%;
-  margin: 0;
-  padding: 0%;
-  border: 0%;
-  background-color: #381010;
-
-.down-Con {
-  height: 100%;  
-
-.down-Title{
-  font-size: 2.5em;
-  font-family: $secretMainFont;
-  color: $textColorWhite;
-  text-align: center;
-  font-weight: 600;
-  letter-spacing: 0.225em;
-  line-height: 1em;
-  margin: 0 0 1em 0;
-  text-transform: uppercase;
-}
-
-.down-text {
-  width: 20em;
-  text-align: justify;
-  color: $textColorWhite;
-  font-size: 1.2em;
- 
-}
-}
-}
-
-// project 
-
-.pptitle { text-align: center;
-  font-family: $secretTitleFont;
-  color:$secretRed ;
-  font-size:4em ;
-  padding-top: 0.7em;
-  text-align: center;
-  font-weight: 400;
-  word-spacing: 0.155em;
-  line-height: 1em;
-  margin: 0 0 0.5em 0;
-  
-}
-
-.ppsubtitle {  text-align: center;
-  font-size: 1.3em;
-  margin-bottom: 1em;
-
-}
-
-.ppara { p {
-  width: 25em;
-  font-size: 1.2em;
-  text-align: justify;
-  padding: 0%;
-}
-}
-
-.pimg {
-  width: 100%;
-  margin-bottom: 3em;
-}
-
-
-
-.santi {
-  margin-left: 4em;
-}
-.gerald {
-  margin-left: 4em;
-}
-
-
-.p-Con {
-
-
- .santi-name{
-  font-size: 1.7em;
- }
-
- .santi-Info {
-   list-style: none;
-   
-   
- }
-}
-
-.p-Con2 {
-
-
-.gerald-name{
- font-size: 1.7em;
-}
-
-.gerald-Info {
-  list-style: none;
-
-}
-}
-
-.ppara {
-  padding-left: 4em;
-  padding-top: 1em;
-}
-
-
-//episodes
-
-.ep-con {
-width: 100%;
-background-color: $secretRed;
-color: $textColorWhite;
-}
-
-.etitle {
-  text-align: center;
-  font-family: $secretTitleFont;
-  color:$textColorWhite ;
-  font-size:4em ;
-  padding-top: 0.7em;
-  text-align: center;
-  font-weight: 100;
-  word-spacing: 0.100em;
-  line-height: 1em;
-  margin: 0 0 0.5em 0;
-}
-
-.esubtitle {
-  text-align: center;
-  font-style: light;
-  font-size: 3em;
-  
-}
-
-.eptitles {
-  font-family: $secretTitleFont;
-  text-align: center;
-  font-size: 3em;
-  margin-top: 1.5em;
-  margin-bottom: 0.5em;
-}
-
-.epp {
-
-  text-align: justify;
-  margin-bottom: 5em;
-}
-
-
-
-
 // contact
-.ctitle {   text-align: center;
+.ctitle {   
+  text-align: center;
   font-family: $secretTitleFont;
   color: $secretRed ;
   font-size: 4em;
-  margin-top: 0.7em;
+  margin: 0.7 0 0.7 0;
 
 }
 
@@ -351,7 +533,9 @@ color: $textColorWhite;
 }
 
 
-
+.logos{
+  width: 0.5em;
+}
 
 
 .section-contact {
